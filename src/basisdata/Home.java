@@ -41,11 +41,12 @@ public class Home extends javax.swing.JFrame {
         setPreferredSize(new java.awt.Dimension(900, 800));
         setSize(new java.awt.Dimension(900, 800));
 
-        header.setBackground(new java.awt.Color(200, 49, 49));
+        header.setBackground(new java.awt.Color(200, 48, 97));
         header.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
 
-        judul.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
-        judul.setText("1001 Trans Malang");
+        judul.setFont(new java.awt.Font("Verdana", 1, 36)); // NOI18N
+        judul.setForeground(new java.awt.Color(235, 184, 66));
+        judul.setText("1001 TRANS MALANG");
 
         javax.swing.GroupLayout headerLayout = new javax.swing.GroupLayout(header);
         header.setLayout(headerLayout);
@@ -54,7 +55,7 @@ public class Home extends javax.swing.JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, headerLayout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(judul)
-                .addGap(267, 267, 267))
+                .addGap(223, 223, 223))
         );
         headerLayout.setVerticalGroup(
             headerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -64,7 +65,7 @@ public class Home extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        sidebar.setBackground(new java.awt.Color(108, 71, 211));
+        sidebar.setBackground(new java.awt.Color(31, 63, 102));
 
         addKendaraan.setBackground(new java.awt.Color(242, 242, 242));
         addKendaraan.setFont(new java.awt.Font("Ubisoft Sans", 0, 14)); // NOI18N

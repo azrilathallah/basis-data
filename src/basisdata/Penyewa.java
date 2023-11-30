@@ -65,9 +65,10 @@ public class Penyewa extends javax.swing.JFrame {
         setPreferredSize(new java.awt.Dimension(1000, 800));
         setSize(new java.awt.Dimension(1000, 800));
 
-        jPanel1.setBackground(new java.awt.Color(200, 49, 49));
+        jPanel1.setBackground(new java.awt.Color(200, 48, 97));
 
-        judul.setFont(new java.awt.Font("Ubisoft Sans", 1, 36)); // NOI18N
+        judul.setFont(new java.awt.Font("Verdana", 1, 36)); // NOI18N
+        judul.setForeground(new java.awt.Color(235, 184, 66));
         judul.setText("DATA PENYEWA");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
@@ -87,7 +88,7 @@ public class Penyewa extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        jPanel3.setBackground(new java.awt.Color(234, 234, 16));
+        jPanel3.setBackground(new java.awt.Color(239, 241, 236));
 
         txt_nama.setFont(new java.awt.Font("Ubisoft Sans", 0, 14)); // NOI18N
         txt_nama.addActionListener(new java.awt.event.ActionListener() {
@@ -105,7 +106,7 @@ public class Penyewa extends javax.swing.JFrame {
             }
         });
 
-        btn_Tambah.setBackground(new java.awt.Color(49, 49, 186));
+        btn_Tambah.setBackground(new java.awt.Color(31, 63, 102));
         btn_Tambah.setFont(new java.awt.Font("Ubisoft Sans", 1, 12)); // NOI18N
         btn_Tambah.setForeground(new java.awt.Color(255, 255, 255));
         btn_Tambah.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/plus.png"))); // NOI18N
@@ -117,7 +118,7 @@ public class Penyewa extends javax.swing.JFrame {
             }
         });
 
-        btn_Hapus.setBackground(new java.awt.Color(49, 49, 186));
+        btn_Hapus.setBackground(new java.awt.Color(31, 63, 102));
         btn_Hapus.setFont(new java.awt.Font("Ubisoft Sans", 1, 12)); // NOI18N
         btn_Hapus.setForeground(new java.awt.Color(255, 255, 255));
         btn_Hapus.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/trash_box.png"))); // NOI18N
@@ -129,7 +130,7 @@ public class Penyewa extends javax.swing.JFrame {
             }
         });
 
-        btn_Edit.setBackground(new java.awt.Color(49, 49, 186));
+        btn_Edit.setBackground(new java.awt.Color(31, 63, 102));
         btn_Edit.setFont(new java.awt.Font("Ubisoft Sans", 1, 12)); // NOI18N
         btn_Edit.setForeground(new java.awt.Color(255, 255, 255));
         btn_Edit.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/pencil_edit.png"))); // NOI18N
@@ -141,7 +142,9 @@ public class Penyewa extends javax.swing.JFrame {
             }
         });
 
+        btn_Kembali.setBackground(new java.awt.Color(31, 63, 102));
         btn_Kembali.setFont(new java.awt.Font("Ubisoft Sans", 1, 12)); // NOI18N
+        btn_Kembali.setForeground(new java.awt.Color(255, 255, 255));
         btn_Kembali.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/arrow_left.png"))); // NOI18N
         btn_Kembali.setText("BACK");
         btn_Kembali.setMargin(new java.awt.Insets(0, 0, 0, 0));
@@ -188,7 +191,7 @@ public class Penyewa extends javax.swing.JFrame {
         jLabel1.getAccessibleContext().setAccessibleParent(jPanel3);
         txt_cari.getAccessibleContext().setAccessibleParent(jPanel3);
 
-        table_Penyewa.setBackground(new java.awt.Color(200, 49, 49));
+        table_Penyewa.setBackground(new java.awt.Color(200, 48, 97));
         table_Penyewa.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(200, 49, 49), 1, true));
         table_Penyewa.setFont(new java.awt.Font("Ubisoft Sans", 0, 14)); // NOI18N
         table_Penyewa.setForeground(new java.awt.Color(255, 255, 255));
@@ -203,7 +206,7 @@ public class Penyewa extends javax.swing.JFrame {
         table_Penyewa.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         table_Penyewa.setGridColor(new java.awt.Color(255, 255, 255));
         table_Penyewa.setRowHeight(25);
-        table_Penyewa.setSelectionBackground(new java.awt.Color(204, 204, 204));
+        table_Penyewa.setSelectionBackground(new java.awt.Color(31, 63, 102));
         table_Penyewa.setShowGrid(true);
         table_Penyewa.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -213,7 +216,7 @@ public class Penyewa extends javax.swing.JFrame {
         jScrollPane1.setViewportView(table_Penyewa);
         table_Penyewa.getAccessibleContext().setAccessibleParent(jPanel3);
 
-        btn_Clear.setBackground(new java.awt.Color(49, 49, 186));
+        btn_Clear.setBackground(new java.awt.Color(31, 63, 102));
         btn_Clear.setFont(new java.awt.Font("Ubisoft Sans", 1, 12)); // NOI18N
         btn_Clear.setForeground(new java.awt.Color(255, 255, 255));
         btn_Clear.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/refresh.png"))); // NOI18N
@@ -225,13 +228,16 @@ public class Penyewa extends javax.swing.JFrame {
             }
         });
 
-        lbl_nama.setFont(new java.awt.Font("Ubisoft Sans", 0, 18)); // NOI18N
+        lbl_nama.setFont(new java.awt.Font("Ubisoft Sans", 1, 18)); // NOI18N
+        lbl_nama.setForeground(new java.awt.Color(31, 63, 102));
         lbl_nama.setText("NAMA                         :");
 
-        lbl_telp.setFont(new java.awt.Font("Ubisoft Sans", 0, 18)); // NOI18N
+        lbl_telp.setFont(new java.awt.Font("Ubisoft Sans", 1, 18)); // NOI18N
+        lbl_telp.setForeground(new java.awt.Color(31, 63, 102));
         lbl_telp.setText("NO TELEPON           :");
 
-        lbl_alamat.setFont(new java.awt.Font("Ubisoft Sans", 0, 18)); // NOI18N
+        lbl_alamat.setFont(new java.awt.Font("Ubisoft Sans", 1, 18)); // NOI18N
+        lbl_alamat.setForeground(new java.awt.Color(31, 63, 102));
         lbl_alamat.setText("ALAMAT                    :");
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/user_tambah_icon.png"))); // NOI18N
@@ -246,9 +252,9 @@ public class Penyewa extends javax.swing.JFrame {
                     .addGroup(jPanel3Layout.createSequentialGroup()
                         .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(lbl_alamat)
-                            .addComponent(lbl_nama, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(lbl_telp, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(43, 43, 43)
+                            .addComponent(lbl_telp, javax.swing.GroupLayout.PREFERRED_SIZE, 173, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(lbl_nama, javax.swing.GroupLayout.PREFERRED_SIZE, 187, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(18, 18, 18)
                         .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(txt_alamat)
                             .addComponent(txt_telp)

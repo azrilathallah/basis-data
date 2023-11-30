@@ -97,9 +97,10 @@ public class Penyewaan extends javax.swing.JFrame {
         setTitle("1001 Trans Malang");
         setPreferredSize(new java.awt.Dimension(1042, 822));
 
-        jPanel1.setBackground(new java.awt.Color(200, 49, 49));
+        jPanel1.setBackground(new java.awt.Color(200, 48, 97));
 
-        judul.setFont(new java.awt.Font("Ubisoft Sans", 1, 36)); // NOI18N
+        judul.setFont(new java.awt.Font("Verdana", 1, 36)); // NOI18N
+        judul.setForeground(new java.awt.Color(235, 184, 66));
         judul.setText("PENYEWAAN");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
@@ -119,11 +120,11 @@ public class Penyewaan extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        jPanel3.setBackground(new java.awt.Color(45, 193, 193));
+        jPanel3.setBackground(new java.awt.Color(239, 241, 236));
 
         txt_pemilik.setFont(new java.awt.Font("Ubisoft Sans", 0, 12)); // NOI18N
 
-        btn_Tambah.setBackground(new java.awt.Color(49, 49, 186));
+        btn_Tambah.setBackground(new java.awt.Color(31, 63, 102));
         btn_Tambah.setFont(new java.awt.Font("Ubisoft Sans", 1, 12)); // NOI18N
         btn_Tambah.setForeground(new java.awt.Color(255, 255, 255));
         btn_Tambah.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/plus.png"))); // NOI18N
@@ -135,7 +136,7 @@ public class Penyewaan extends javax.swing.JFrame {
             }
         });
 
-        btn_Hapus.setBackground(new java.awt.Color(49, 49, 186));
+        btn_Hapus.setBackground(new java.awt.Color(31, 63, 102));
         btn_Hapus.setFont(new java.awt.Font("Ubisoft Sans", 1, 12)); // NOI18N
         btn_Hapus.setForeground(new java.awt.Color(255, 255, 255));
         btn_Hapus.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/trash_box.png"))); // NOI18N
@@ -147,7 +148,7 @@ public class Penyewaan extends javax.swing.JFrame {
             }
         });
 
-        btn_Edit.setBackground(new java.awt.Color(49, 49, 186));
+        btn_Edit.setBackground(new java.awt.Color(31, 63, 102));
         btn_Edit.setFont(new java.awt.Font("Ubisoft Sans", 1, 12)); // NOI18N
         btn_Edit.setForeground(new java.awt.Color(255, 255, 255));
         btn_Edit.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/pencil_edit.png"))); // NOI18N
@@ -159,7 +160,9 @@ public class Penyewaan extends javax.swing.JFrame {
             }
         });
 
+        btn_Kembali.setBackground(new java.awt.Color(31, 63, 102));
         btn_Kembali.setFont(new java.awt.Font("Ubisoft Sans", 1, 12)); // NOI18N
+        btn_Kembali.setForeground(new java.awt.Color(255, 255, 255));
         btn_Kembali.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/arrow_left.png"))); // NOI18N
         btn_Kembali.setText("BACK");
         btn_Kembali.setMargin(new java.awt.Insets(0, 0, 0, 0));
@@ -203,7 +206,7 @@ public class Penyewaan extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        table_Penyewaan.setBackground(new java.awt.Color(200, 49, 49));
+        table_Penyewaan.setBackground(new java.awt.Color(200, 48, 97));
         table_Penyewaan.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(200, 49, 49), 1, true));
         table_Penyewaan.setFont(new java.awt.Font("Ubisoft Sans", 0, 12)); // NOI18N
         table_Penyewaan.setForeground(new java.awt.Color(255, 255, 255));
@@ -217,7 +220,7 @@ public class Penyewaan extends javax.swing.JFrame {
         ));
         table_Penyewaan.setGridColor(new java.awt.Color(255, 255, 255));
         table_Penyewaan.setRowHeight(25);
-        table_Penyewaan.setSelectionBackground(new java.awt.Color(204, 204, 204));
+        table_Penyewaan.setSelectionBackground(new java.awt.Color(31, 63, 102));
         table_Penyewaan.setShowGrid(true);
         table_Penyewaan.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -237,7 +240,7 @@ public class Penyewaan extends javax.swing.JFrame {
         });
         jScrollPane1.setViewportView(table_Penyewaan);
 
-        btn_Clear.setBackground(new java.awt.Color(49, 49, 186));
+        btn_Clear.setBackground(new java.awt.Color(31, 63, 102));
         btn_Clear.setFont(new java.awt.Font("Ubisoft Sans", 1, 12)); // NOI18N
         btn_Clear.setForeground(new java.awt.Color(255, 255, 255));
         btn_Clear.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/refresh.png"))); // NOI18N
@@ -249,24 +252,30 @@ public class Penyewaan extends javax.swing.JFrame {
             }
         });
 
-        lbl_nopol.setFont(new java.awt.Font("Ubisoft Sans", 0, 14)); // NOI18N
+        lbl_nopol.setFont(new java.awt.Font("Ubisoft Sans", 1, 14)); // NOI18N
+        lbl_nopol.setForeground(new java.awt.Color(31, 63, 102));
         lbl_nopol.setText("PEMILIK UNIT             :");
 
-        lbl_unit.setFont(new java.awt.Font("Ubisoft Sans", 0, 14)); // NOI18N
+        lbl_unit.setFont(new java.awt.Font("Ubisoft Sans", 1, 14)); // NOI18N
+        lbl_unit.setForeground(new java.awt.Color(31, 63, 102));
         lbl_unit.setText("KETERANGAN          :");
 
         box_nama.setFont(new java.awt.Font("Ubisoft Sans", 0, 12)); // NOI18N
 
-        lbl_tglSewa.setFont(new java.awt.Font("Ubisoft Sans", 0, 14)); // NOI18N
+        lbl_tglSewa.setFont(new java.awt.Font("Ubisoft Sans", 1, 14)); // NOI18N
+        lbl_tglSewa.setForeground(new java.awt.Color(31, 63, 102));
         lbl_tglSewa.setText("ALAMAT PENGAMBILAN      :");
 
-        lbl_tglKembali.setFont(new java.awt.Font("Ubisoft Sans", 0, 14)); // NOI18N
+        lbl_tglKembali.setFont(new java.awt.Font("Ubisoft Sans", 1, 14)); // NOI18N
+        lbl_tglKembali.setForeground(new java.awt.Color(31, 63, 102));
         lbl_tglKembali.setText("ALAMAT PENGEMBALIAN   :");
 
-        lbl_btsWkt.setFont(new java.awt.Font("Ubisoft Sans", 0, 14)); // NOI18N
-        lbl_btsWkt.setText("JAMINAN                                   :");
+        lbl_btsWkt.setFont(new java.awt.Font("Ubisoft Sans", 1, 14)); // NOI18N
+        lbl_btsWkt.setForeground(new java.awt.Color(31, 63, 102));
+        lbl_btsWkt.setText("JAMINAN                                     :");
 
-        lbl_nama.setFont(new java.awt.Font("Ubisoft Sans", 0, 14)); // NOI18N
+        lbl_nama.setFont(new java.awt.Font("Ubisoft Sans", 1, 14)); // NOI18N
+        lbl_nama.setForeground(new java.awt.Color(31, 63, 102));
         lbl_nama.setText("NAMA PENYEWA     :");
 
         box_keterangan.setFont(new java.awt.Font("Ubisoft Sans", 0, 12)); // NOI18N
@@ -288,7 +297,8 @@ public class Penyewaan extends javax.swing.JFrame {
             }
         });
 
-        lbl_noTrans.setFont(new java.awt.Font("Ubisoft Sans", 0, 14)); // NOI18N
+        lbl_noTrans.setFont(new java.awt.Font("Ubisoft Sans", 1, 14)); // NOI18N
+        lbl_noTrans.setForeground(new java.awt.Color(31, 63, 102));
         lbl_noTrans.setText("Nomor Transaksi       :");
 
         txt_noTrans.setFont(new java.awt.Font("Ubisoft Sans", 0, 12)); // NOI18N
@@ -298,7 +308,9 @@ public class Penyewaan extends javax.swing.JFrame {
             }
         });
 
+        btn_next.setBackground(new java.awt.Color(31, 63, 102));
         btn_next.setFont(new java.awt.Font("Ubisoft Sans", 1, 12)); // NOI18N
+        btn_next.setForeground(new java.awt.Color(255, 255, 255));
         btn_next.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/arrow_right.png"))); // NOI18N
         btn_next.setText("NEXT");
         btn_next.setMargin(new java.awt.Insets(0, 0, 0, 0));
@@ -313,7 +325,7 @@ public class Penyewaan extends javax.swing.JFrame {
         jPanel3Layout.setHorizontalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel3Layout.createSequentialGroup()
-                .addGap(54, 54, 54)
+                .addGap(52, 52, 52)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addGroup(jPanel3Layout.createSequentialGroup()
                         .addComponent(btn_Tambah, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -326,30 +338,30 @@ public class Penyewaan extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(btn_Kembali, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addGroup(jPanel3Layout.createSequentialGroup()
-                                .addComponent(lbl_noTrans, javax.swing.GroupLayout.PREFERRED_SIZE, 134, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(txt_noTrans, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(jPanel3Layout.createSequentialGroup()
-                                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(lbl_unit, javax.swing.GroupLayout.PREFERRED_SIZE, 128, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(lbl_nama, javax.swing.GroupLayout.PREFERRED_SIZE, 128, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(lbl_nopol))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                    .addGroup(jPanel3Layout.createSequentialGroup()
+                                        .addComponent(lbl_nopol)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED))
+                                    .addGroup(jPanel3Layout.createSequentialGroup()
+                                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                            .addComponent(lbl_unit, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                            .addComponent(lbl_nama, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                        .addGap(6, 6, 6)))
                                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(txt_pemilik, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(box_nama, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(box_keterangan, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                    .addComponent(box_keterangan, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addGroup(jPanel3Layout.createSequentialGroup()
+                                .addComponent(lbl_noTrans)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(txt_noTrans, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 23, Short.MAX_VALUE)
                         .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel3Layout.createSequentialGroup()
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(lbl_tglKembali, javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addComponent(lbl_btsWkt, javax.swing.GroupLayout.Alignment.TRAILING)))
-                            .addGroup(jPanel3Layout.createSequentialGroup()
-                                .addGap(31, 31, 31)
-                                .addComponent(lbl_tglSewa)))
+                            .addComponent(lbl_tglKembali)
+                            .addComponent(lbl_btsWkt, javax.swing.GroupLayout.PREFERRED_SIZE, 193, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(lbl_tglSewa))
                         .addGap(18, 18, 18)
                         .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(txt_almtAmbil, javax.swing.GroupLayout.PREFERRED_SIZE, 400, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -360,7 +372,7 @@ public class Penyewaan extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(btn_next, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(jScrollPane1))
-                .addContainerGap(109, Short.MAX_VALUE))
+                .addContainerGap(97, Short.MAX_VALUE))
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
